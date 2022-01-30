@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fs-1: 2em;
+  --fs-2: 1.6em;
+  --fs-3: 1.2em;
+  --fs-4: 0.8em;
+
+  --clr-primary: rgb(195, 0, 255);
+  --clr-inter: rgb(160, 0, 209);
+  --clr-dark: rgb(85, 0, 110);
+
+  --br: 0.5em;
+  --btm-shadow: lightgray 0 0 0.625em;
+}
+
+body {
+  font-family: Inter;
+  margin: 3.5em 0 0 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: var(--btm-shadow);
+  z-index: 3;
+
+  &__menu {
+    display: flex;
+    margin: auto;
+  }
+
+  &__item {
+    margin: 0 1em;
+  }
+
+  &__link {
+    color: var(--clr-dark);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--clr-inter);
+    }
+  }
+}
+
+.main {
+  padding: 1em 1em 0;
+}
+
+.cover {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  height: 38.125em;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    font-size: var(--fs-1);
+  }
+
+  &__sub-title {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    font-size: var(--fs-1);
+    color: var(--clr-primary);
+  }
+
+  &__description {
+    margin-top: 0.5em;
+    line-height: 1.6em;
+  }
+
+  &__social {
+    justify-self: center;
+  }
+
+  &__icon {
+    font-size: var(--fs-3);
+    color: var(--clr-primary);
+    margin: 0 1em;
+  }
+
+  &__action {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    margin-top: 2.5em;
+    color: #8d8d8d;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.projects {
+  width: 70%;
+  padding: 85px 3.5em 3.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+
+  &__title {
+    font-size: var(--fs-2);
+    color: var(--clr-dark);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+
+.project {
+  width: 30%;
+  border: solid lightgray 0.5px;
+  border-radius: var(--br);
+
+  &__image-wrapper {
+    width: 100%;
+    height: 15.625em;
+    overflow: auto;
+    border-radius: var(--br) var(--br) 0 0;
+    cursor: ns-resize;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__card {
+    padding: 1em 1em 1.5em;
+    height: auto;
+  }
+
+  &__title {
+    margin: 0 0 0.3em;
+    color: var(--clr-dark);
+    text-align: center;
+  }
+
+  &__tags {
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  &__tag {
+    font-size: var(--fs-4);
+    margin: 0.2em;
+    border: solid lightgray 1px;
+    padding: 0.3em 0.6em;
+    border-radius: var(--br);
+    background-color: rgb(238, 238, 238);
+  }
+
+  &__buttons {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  &__button {
+    margin: 0.5em;
+    transition: all ease-out 250ms;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+    border-radius: var(--br);
+    border: var(--clr-inter) solid 1px;
+    background-color: var(--clr-inter);
+    padding: 0.4em 0.4em;
+    font-weight: 600;
+    color: white;
+    transition: all ease-out 250ms;
+
+    &:hover {
+      color: white;
+      background-color: var(--clr-primary);
+      border-color: var(--clr-primary);
+    }
+  }
+}
+
+.about {
+  width: 70%;
+  padding: 3.5em 3.5em 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+
+  &__title {
+    font-size: var(--fs-2);
+    color: var(--clr-dark);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  &__text {
+    margin-top: 0.5em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+  &__link-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    border-radius: var(--br);
+    border: var(--clr-inter) solid 1px;
+    background-color: var(--clr-inter);
+    margin: 0.5em 0 2em;
+    padding: 0.6em 0.6em;
+    font-weight: 600;
+    color: white;
+    transition: all ease-out 250ms;
+
+    &:hover {
+      color: white;
+      background-color: var(--clr-primary);
+      border-color: var(--clr-primary);
+    }
+  }
+}
+
+.skills {
+  width: 30%;
+  border: solid lightgray 0.5px;
+  border-radius: var(--br);
+  width: 27%;
+  padding: 1em 1em 1.5em;
+  height: auto;
+  background-color: rgba(211, 211, 211, 0.1);
+
+  &-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0 0 0.3em;
+    color: var(--clr-dark);
+    text-align: center;
+  }
+
+  &__list {
+    justify-content: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-size: var(--fs-4);
+    margin: 0.2em;
+    border: solid lightgray 1px;
+    padding: 0.4em 0.8em;
+    border-radius: var(--br);
+    background-color: rgb(238, 238, 238);
+  }
+
+  &__image {
+    background-color: white;
+    text-align: center;
+    width: 4em;
+    height: 4em;
+    margin: 1em auto;
+    display: flex;
+    border: lightgray solid 0.5px;
+    border-radius: 50%;
+
+    svg {
+      font-size: var(--fs-1);
+      margin: auto;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  box-shadow: var(--btm-shadow);
+  background-color: white;
+
+  .cover__social {
+    display: flex;
+    margin: auto;
+  }
+
+  .cover__link {
+    font-size: var(--fs-3);
+    color: var(--clr-dark);
+    margin: 0 1em;
+
+    &:hover {
+      color: var(--clr-primary);
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .cover {
+    width: 80%;
+  }
+
+  .projects {
+    width: 80%;
+    padding-top: 75px;
+
+    &__title {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .project {
+    width: 48%;
+    margin-bottom: 1.5em;
+
+    &--third {
+      margin: auto;
+    }
+
+    &__image-wrapper {
+      height: 13.75em;
+    }
+  }
+
+  .about {
+    width: 80%;
+    padding-bottom: 3.5em;
+  }
+
+  .skills {
+    width: 25%;
+  }
+}
+
+@media (max-width: 426px) {
+  .cover {
+    width: 90%;
+
+    &__container {
+      margin-top: 0;
+    }
+
+    &__action {
+      margin-top: 1.2em;
+    }
+  }
+
+  .projects {
+    width: 90%;
+    padding: 75px 0.5em 0.5em;
+
+    &__title {
+      margin-top: 0.2em;
+    }
+  }
+
+  .project {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.5em;
+
+    &__image-wrapper {
+      height: 12.5em;
+    }
+  }
+
+  .about {
+    width: 90%;
+    padding: 3.5em 0.5em 1.5em;
+  }
+
+  .skills {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1.5em;
+  }
+}
