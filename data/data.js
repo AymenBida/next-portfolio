@@ -36,7 +36,7 @@ export const socialItems = [
 ];
 
 export const projectList = {
-  title: "My Recent Works",
+  title: "Example projects",
 };
 
 export const projects = [
