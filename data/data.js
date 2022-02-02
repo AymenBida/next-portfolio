@@ -17,7 +17,7 @@ export const cover = {
   title: "Hi there. I'm Aymen",
   subTitle: "I am a Full Stack Web Developer",
   description:
-    "I'm a passionate developer, I love what I do and I like challenges that makes me grow. I'm used to work primarely with JavaScript, but I also know Ruby on Rails. I can do backend and frontend. I can help you build a product, feature or website. If you want to know more about me don't hesitate to contact me ^^",
+    "I'm a passionate developer, I love what I do and I like challenges that makes me grow. I can do backend and frontend. I can help you build a product, feature or website. If you want to know more about me don't hesitate to contact me ^^",
 };
 
 export const socialItems = [
@@ -88,8 +88,8 @@ export const projects = [
 ];
 
 export const about = {
-  title: "About me",
-  text: "I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.",
+  title: "About",
+  text: "I'm used to work primarely with JavaScript, but I also know Ruby on Rails. You can find here some of the technologies I used and you can get my resume as well",
   resume: {
     link: "https://docs.google.com/document/d/1yjgRAANHSOqbe_ohD9AjhpmDNXzAGkz7VnKh1H8KD_M/edit?usp=sharing",
     text: "Get My Resume",
@@ -110,6 +110,11 @@ export const skills = [
   {
     icon: "toolBox",
     title: "Skills",
-    items: ["Communication", "Collaboration", "Pair-Programming", "Remote work"],
+    items: [
+      "Communication",
+      "Collaboration",
+      "Pair-Programming",
+      "Remote work",
+    ],
   },
 ];
