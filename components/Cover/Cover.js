@@ -7,7 +7,7 @@ const Cover = ({ title, subTitle, description, children }) => {
         <p className="cover__description">{description}</p>
         {children}
         <a href="#projects" className="cover__action">
-          see projects
+          Browse
         </a>
       </div>
     </div>
