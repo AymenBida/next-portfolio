@@ -100,16 +100,16 @@ export const skills = [
   {
     icon: "code",
     title: "Languages",
-    items: ["HTML", "CSS", "SASS", "Ruby", "JavaScript", "SQL"],
+    items: ["HTML", "CSS", "SASS", "Ruby", "JavaScript", "TypeScript", "SQL"],
   },
   {
     icon: "laptopCode",
     title: "Frameworks",
-    items: ["Ruby on Rails", "Bootstrap"],
+    items: ["Ruby on Rails", "Bootstrap", "React", "Next", "Express"],
   },
   {
     icon: "toolBox",
     title: "Skills",
-    items: ["Communication", "Collaboration"],
+    items: ["Communication", "Collaboration", "Pair-Programming", "Remote work"],
   },
 ];
