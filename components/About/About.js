@@ -1,3 +1,4 @@
+import Resume from "../Resume/Resume";
 import SkillList from "../SkillList/SkillList";
 
 const About = ({ title, text, resume, skills }) => {
@@ -5,16 +6,7 @@ const About = ({ title, text, resume, skills }) => {
     <div id="about" className="about">
       <h2 className="about__title">{title}</h2>
       <p className="about__text">{text}</p>
-      <div className="about__link-container">
-        <a
-          href={resume.link}
-          className="about__link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {resume.text}
-        </a>
-      </div>
+      <Resume resume={resume} />
       <SkillList skills={skills} />
     </div>
   );

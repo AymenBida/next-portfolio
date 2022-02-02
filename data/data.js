@@ -12,12 +12,12 @@ export const navItems = [
     text: "About",
   },
 ];
-
+// TODO: create a piano to be played with
 export const cover = {
-  title: "Hey there. I'm Aymen",
-  subTitle: "I am a software developer",
+  title: "Hi there. I'm Aymen",
+  subTitle: "I am a Full Stack Web Developer",
   description:
-    "I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.",
+    "I'm a passionate developer, I love what I do and I like challenges that makes me grow. I'm used to work primarely with JavaScript, but I also know Ruby on Rails. I can do backend and frontend. I can help you build a product, feature or website. If you want to know more about me don't hesitate to contact me ^^",
 };
 
 export const socialItems = [
