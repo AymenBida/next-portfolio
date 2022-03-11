@@ -192,6 +192,11 @@ a {
     text-align: center;
   }
 
+  &__description {
+    text-align: justify;
+    font-weight: 300;
+  }
+
   &__tags {
     justify-content: center;
     margin-top: 0;

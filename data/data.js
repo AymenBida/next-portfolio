@@ -17,7 +17,7 @@ export const cover = {
   title: "Hi there. I'm Aymen",
   subTitle: "I am a Full Stack Web Developer",
   description:
-    "I'm a passionate developer, I love what I do and I like challenges that makes me grow. I can do backend and frontend. I can help you build a product, feature or website. If you want to know more about me don't hesitate to contact me ^^",
+    "I'm a passionate developer, I love creating apps and solving problems and I like challenges that make me grow. I'm proficient at writing clean code for backend and frontend. I will build your product, feature, or website the way you imagine it to be. If you want to know more don't hesitate to contact me ^^",
 };
 
 export const socialItems = [
@@ -36,13 +36,14 @@ export const socialItems = [
 ];
 
 export const projectList = {
-  title: "Example projects",
+  title: "Featured Projects",
 };
 
 export const projects = [
   {
     image: "/tech_articles.png",
     title: "Tech Articles",
+    description: "This is a web app where users can create articles about tech and see and vote for existing ones",
     tags: ["Ruby on Rails", "Postgresql", "SASS"],
     buttons: [
       {
@@ -58,6 +59,7 @@ export const projects = [
   {
     image: "/coder_runner.png",
     title: "Coder Runner",
+    description: "Endless runner platform game made with phaser JS",
     tags: ["JavaScript", "Phaser JS", "Webpack"],
     buttons: [
       {
@@ -73,6 +75,7 @@ export const projects = [
   {
     image: "/poke_react.png",
     title: "Poke-React",
+    description: "This app is made with React and Redux, and you can use it to see stats about specific pokemon using the PokeApi",
     tags: ["React", "Redux", "API"],
     buttons: [
       {
@@ -89,7 +92,7 @@ export const projects = [
 
 export const about = {
   title: "About",
-  text: "I'm used to work primarely with JavaScript, but I also know Ruby on Rails. You can find here some of the technologies I used and you can get my resume as well",
+  text: "I used to be a music teacher so I am very good at explaining abstract concepts to people. You can find here some of the technologies I used and you can get my resume as well",
   resume: {
     link: "https://docs.google.com/document/d/1yjgRAANHSOqbe_ohD9AjhpmDNXzAGkz7VnKh1H8KD_M/edit?usp=sharing",
     text: "Get My Resume",
